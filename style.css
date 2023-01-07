@@ -594,7 +594,9 @@ height: 100%
     /* background: rgba(220, 217, 217, 0.3) */
 }
 #skills{
-    width: 650px;
+    /* text-align: justify; */
+    /* text-justify: auto; */
+    width: 790px;
     margin: 5px auto;
     color: red;
     padding: 20px;
