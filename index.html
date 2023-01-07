@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- <meta name="description" content=""> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="Icons/academicons-1.9.3/academicons-1.9.3/css/academicons.min.css ">
+        <title>Jayston's Portfolio Website</title>
+        <script src="https://kit.fontawesome.com/8ab52d153a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="Images/website logo.PNG" alt="Website Logo" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#portfolio">Projects</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                        <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                    <img src="Images/dark-mode.png" id="icon" height="50px" width="50px">
+                </nav>
+                <div class="header-text">
+                    <p>Mechanical Engineer</p>
+                    <h1>Hello, I'm <span>Jayston</span><br>Menezes</h1>
+                </div>
+            </div>    
+        </div>
+
+<!-- About Me -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/about_me_photo.jpg" alt="my photo"> <!-- Informal Photo to be added -->
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                            <p>
+                                I am Mechanical Engineering Graduate Student at Northeastern University. My program concentration is in Mechatronics. I am also
+                                actively working as a Biomechanics Research Assistant at the <a href="https://neumove.org/" target="_blank">NeuMove
+                                Lab</a>, under the supervision of its Principal Investigator <a href="http://seungmoon.com/" target="_blank">Dr. 
+                                Seungmoon Song</a>. My interest for Mechatronics comes from the desire to find and implement programming appliations 
+                                in the field of Mechanical Engineering, to improve performance, collect & analyze data, and save time, 
+                                which I believe is the also the future of other fields too.
+                                <br>
+                                <br>
+                                Through my academic projects and ongoing research experience, I have worked with interfacing sensors to get desired output 
+                                and also to detect anomalies in systems. My current task of working with Exoskeletons and Programmable Treadmill 
+                                has added great value to this experience. Furthermore, I have written Python Scripts to create GUI as well as to 
+                                analyze, resample, filter and label output data of hardware systems. I aspire to be a Mechatronics Engineer, 
+                                to help design assistive devices systems and implement programming logic in systems used in our daily lives.
+                            </p>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="education">
+            <div class="container">
+                <h1 class="sub-title">Education</h1>
+            </div>
+            <div class="timeline">
+                <div class="edu-container left-container">
+                    <a href="https://www.northeastern.edu/" target="_blank"><img src="Images/neu.png"></a>
+                    <div class="text-box">
+                        <h2>M.S. in Mechanical Engineering (Mechatronics)</h2>
+                        <h4>Northeastern University</h4>
+                        <h5>2022-Present</h5>
+                        <p class="education-sub">Relevant Courses:</p>
+                        <ol>
+                            <!-- <li><span>Computer Aided Design & Manufacturing (ME 5240)</span></li> -->
+                            <li><span>Control Systems Engineering (ME 5659)</span></li>
+                            <li><span>Robot Mechanics & Control (ME 5250)</span></li>
+                            <li><span>Mechatronics Systems (ME 5245)</span></li>
+                            <li><span>Wearable Robotics (ME 7374)</span></li>
+                        </ol>
+                        <span class="left-container-arrow"></span>
+                    </div>
+                </div>
+                <div class="edu-container right-container">
+                    <a href="https://fcrit.ac.in/" target="_blank"><img src="Images/fcrit.png"></a>
+                    <div class="text-box">
+                        <h2>B.Tech. in Mechanical Engineering</h2>
+                        <h4>Fr. Conceicao Rodrigues Institute of Technology</h4>
+                        <h5>2017-2021</h5>
+                        <p class="education-sub">➼ Aggregate: 8.52/10.0</p>
+                        <span class="right-container-arrow"></span>
+                    </div>
+                </div>
+                <div class="edu-container left-container">
+                    <a href="http://www.siesascs.edu.in/" target="_blank"><img src="Images/sies.png"></a>
+                    <div class="text-box">
+                        <h2>Junior College Concentration in Electronics</h2>
+                        <h4>S.I.E.S. College of Arts, Science & Commerce</h4>
+                        <h5>2015-2017</h5>
+                        <p class="education-sub">➼ Aggregate: 75.85%</p>
+                        <span class="left-container-arrow"></span>
+                    </div>
+                </div>
+                <div class="edu-container right-container">
+                    <img src="Images/sjhs.png">
+                    <div class="text-box">
+                        <h2>Secondary Education</h2>
+                        <h4>St. Joseph's High School</h4>
+                        <h5>2004-2015</h5>
+                        <p class="education-sub">➼ Aggregate: 85.60%</p>
+                        <span class="right-container-arrow"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- Experience -->
+        <div id="experience">
+            <div class="container">
+                <h1 class="sub-title">Technical Experience</h1>
+            </div>
+            <div class="experiences-list">
+                <div id="experience-1">
+                    <span class='icon-1'></span>
+                    <h2>Northeastern University</h2>
+                    <h4>Graduate Research Assistant</h4>
+                    <ul>
+                        <li>Research about developing a Virtual Neuromusuclar Controller for commanding torque for assistive walking using exoboots and Python.</li>
+                        <li>Modified existing exoboot code to execute as an offline testing code</li>
+                        <li>Programming to Resample, Filter and Clean Treadmill Data to be linked and combined with exoboot data.</li>
+                    </ul>
+                </div>
+                <div id="experience-2">
+                    <span class='icon-2'></span>
+                    <h2>L&T Hydrocarbon Eng.</h2>
+                    <h4>Mechanical Engineering Intern</h4>
+                    <ul>
+                        <li>Overview on the functional detais of EPCI (Engineering, Procurement, Construction & Installation) of offshore sites in the Oil & Gas Industry.</li>
+                        <li>Completed a case study on the working of Sump Caisson and recent advancements for its better functionality.</li>
+                    </ul>
+                </div>
+                <div id="experience-3">
+                    <span class='icon-3'></span>
+                    <h2>Bharat Petroleum Corp. Ltd.</h2>
+                    <h4>Mechanical Engineering Intern</h4>
+                    <ul>
+                        <li>Overview of different types of pumps used in an oil and gas refinery such Submersible Pumps, Screw Pumps and Centrifugal Pumps.</li>
+                        <li>Completed a project on technical of study of disassembly, maintenance operations and assembly of Submersible Sump Pumps at the refinery's Central Engineering Workshop.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+<!-- Portfolio -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">Projects</h1>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class='img' src="Images/FYP_1.png" alt="">
+                        <h3>Simulation of Sequencing for Stochastic Scheduling in Job Shop</h3>
+                        <!-- <p>The project aims to elimate the underlying assumptions of Deterministic Scheduling and provide models for Stochastic Scheduling.</p> -->
+                        <p>Innovated a simulation environment, consisting of 4 individual models, to perform Stochastic Scheduling of jobs for a manufacturing company.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class='img' src="Images/TC_1.jpg" alt="">
+                        <h3>Temperature Control Inside a Closed Container</h3>
+                        <p>Develped a control unit using Arduino, Thermistor, Fan, Incandescent Bulb and PID Controller to maintain a fixed temperature range in a closed container.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class='img' src="Images/HM_1.png" alt="">
+                        <h3>Application Software for Design of Hoisting Mechanism</h3>
+                        <p>Implemented a software for performing design calculations and analyzing stresses of all components in a hoisiting mechanism. The developed algorithm modifies dimensions to avoid failure and provides specification of standard components to be used.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class='img' src="Images/FB_1.png" alt="">
+                        <h3>Application Software for Desing of Flat Belt Pulley</h3>
+                        <p>Develped a software for performing design calculations for Flat Belt Pulley.The developed algorithm removes constraints on range of material selection alongside implementing Application Programming Interface (API) to provide complete design solution in Microsoft Word document.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class='img' src="Images/TD_1.jpg" alt="">
+                        <h3>Water Turbidity Detector and Filtration System</h3>
+                        <p>Built a filtration system using Turbidity sensor and Arduino microcontroller to remove sludge sedimentation and macro particles in water.</p>   
+                    </div>
+                    <div class="swiper-slide">
+                        <img class='img' src="Images/SG_1.png" alt="">
+                        <h3>Application Software for Design of Spur Gear</h3>
+                        <p>Designed a software for performing design calcuations  of a single stage spur gear. It provides the operator freedom to choose the material for individual components, tooth profile and type of gear cut.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class='scb' src="Images/SCB_1.jpg" alt="">
+                        <h3>Application Software for Design of Sliding Contact Bearings</h3>
+                        <p>Develped a software for performing the design calculations of application based hydrodynamic sliding contact bearing. The software provides output of all the non-dimensional performance parameters in the design.</p>   
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>          
+        </div>
+
+
+<!-- Skills -->
+        <div class="skills-container">
+            <h1 class="sub-title">Skills</h1>
+        </div>
+        <div id="skills">
+            <li>
+                <h3>Python (Libraries: Numpy, Pandas, PyQT5, Turicreate, OpenCV)</h3>
+                <span class="bar">
+                    <span class="python">
+                    </span>
+                </span>
+            </li>
+            <li>
+                <h3>CAD Packages (AutoCAD, Autodesk Inventor, Fusion 360, SoldiWorks)</h3>
+                <span class="bar">
+                    <span class="cad-packages">
+                    </span>
+                </span>
+            </li>
+            <li>
+                <h3>Mircrocontrollers (Arduino, Raspberry Pi)</h3>
+                <span class="bar">
+                    <span class="microcontrollers">
+                    </span>
+                </span>
+            </li>
+            <li>
+                <h3>Web Development (HTML, CSS, Javascript)</h3>
+                <span class="bar">
+                    <span class="web-dev">
+                    </span>
+                </span>
+            </li>
+            <li>
+                <h3>Documentation Tools (MS Word, MS Excel, MS PowerPoint, MS OneNote) </h3>
+                <span class="bar">
+                    <span class="doc-tools">
+                    </span>
+                </span>
+            </li>
+            <li>
+                <h3>Simulation Software (ANSYS [Mechanical APDL and Workbench], MATLAB)</h3>
+                <span class="bar">
+                    <span class="sim-software">
+                    </span>
+                </span>
+            </li>
+            <li>
+                <h3>Other Programming Languages (XML, MySQL, C, GNU Octave</h3>
+                <span class="bar">
+                    <span class="other-prog-lang">
+                    </span>
+                </span>
+            </li>
+        </div>
+
+<!-- Contact -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p>
+                            <i class="fa-solid fa-envelope">
+                            </i>menezes.j@northeastern.edu
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-mobile">
+                            </i>(857)-308-7622
+                        </p>
+                        <div class="social-icons">
+                            <a href="https://scholar.google.com/citations?user=NzSb5UsAAAAJ&hl=en&oi=ao" target="_blank">
+                                <i class="ai ai-google-scholar ai-1x">
+                                </i>
+                            </a>
+                            <a href="https://twitter.com/JArlenM_99" target="_blank">
+                                <i class="fa-brands fa-twitter">
+                                </i>
+                            </a>
+                            <a href="https://github.com/jam-coder-99" target="_blank">
+                                <i class="fa-brands fa-github">
+                                </i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/jayston-menezes/" target="_blank">
+                                <i class="fa-brands fa-linkedin">
+                                </i>
+                            </a>
+                        </div>
+                        <a href="Documents/Resume_Jayston.pdf" download class="btn btn2">Download Resume</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Created by Jayston. Last Updated January 2023.</p>
+            </div>
+        </div>
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu")
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+        
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzrIir8QV5e52JuPMNDG5vpWqMPMnY2Y9A66gw0DXK1zk8AtfCJgf40u91JB1HvDWm4/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Thank you contacting me! I will reach out shortly."
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+
+        <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 15,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script>
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "Images/light-mode.png";
+            }else{
+                icon.src = "Images/dark-mode.png";
+            }
+        }
+    </script>
+    </body>
+</html>
+
