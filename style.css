@@ -759,6 +759,15 @@ height: 100%
 }
 
 /* contact */
+.skills-container{
+    margin-top: 20px;
+/*     padding-left: 50px; */
+/*     position: relative; */
+/*     width: 60%; */
+/*     animation: movedown 1s linear forwards; */
+/*     opacity: 0; */
+/*     background: rgba(220, 217, 217, 0.3) */
+}
 .contact-left{
     flex-basis: 35%;
 }
